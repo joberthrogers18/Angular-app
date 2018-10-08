@@ -17,6 +17,8 @@ export class PainelComponent implements OnInit {
   public rodada: number = 0
   public rodadaFrase: Frase
 
+  public progresso: number = 0
+
   constructor() { 
     this.rodadaFrase = this.frases[this.rodada]
     console.log(this.rodadaFrase)
@@ -31,6 +33,7 @@ export class PainelComponent implements OnInit {
 
   public verificarResposta():void{
     if(this.resposta == this.frases[this.rodada].frasePtBr){
+      this.progresso = this.progresso + 25 // atualiza progresso da barra
       this.rodada++ // atualiza variavel rodada
       this.rodadaFrase = this.frases[this.rodada]
     }
