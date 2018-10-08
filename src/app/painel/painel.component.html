@@ -12,10 +12,13 @@
         </div>
         <div class="row">
             <div class="col">
-                <h6 class="font-weight-bold">Traduza a frase:</h6>
-                <p>How are you?</p>
+                <h6 class="font-weight-bold">{{instrucao}}</h6>
+                <p>{{frases[2].fraseEng}}</p>
                 <div class="form-group">
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea 
+                    class="form-control"
+                     rows="3"
+                    (input)="atualizarResposta($event)"></textarea><!-- Para fazer event bind de forma clara precisa usar $event como parametro da função-->
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import {Frase} from '../shared/frase.model'
 
-const FRASES: Array<Frase> = [
+export const FRASES: Array<Frase> = [
     {fraseEng: 'How are you?',frasePtBr:' Como vai voce?'},
     {fraseEng: 'I like play soccer', frasePtBr: 'Eu gosto de jogar futebol'},
     {fraseEng: 'The diference between us is the distance', frasePtBr: 'A diferença entre nós é a distância'},
