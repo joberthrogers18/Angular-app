@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col">
                 <h6 class="font-weight-bold">{{instrucao}}</h6>
-                <p>{{frases[2].fraseEng}}</p>
+                <p>{{rodadaFrase.fraseEng}}</p>
                 <div class="form-group">
                     <textarea 
                     class="form-control"
@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="btn btn-dark float-right">Verificar</div>
+                <div (click)="verificarResposta()" class="btn btn-dark float-right">Verificar</div>
             </div>
         </div>
     </div>

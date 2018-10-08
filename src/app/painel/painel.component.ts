@@ -12,16 +12,28 @@ export class PainelComponent implements OnInit {
   
   public instrucao: string = 'Traduza a frase:'
   public frases: Array<Frase> = FRASES
-  public resposta: string 
+  public resposta: string
 
-  constructor() { console.log(this.frases)}
+  public rodada: number = 0
+  public rodadaFrase: Frase
+
+  constructor() { 
+    this.rodadaFrase = this.frases[this.rodada]
+    console.log(this.rodadaFrase)
+  }
 
   ngOnInit() {
   }
 
   public atualizarResposta(resposta: Event):void{
     this.resposta = (<HTMLInputElement>resposta.target).value // precisa usar desse jeito no event bind para capturar o valor do estado do DOM
-    console.log(this.resposta)
+  }
+
+  public verificarResposta():void{
+    if(this.resposta == this.frases[this.rodada].frasePtBr){
+      this.rodada++ // atualiza variavel rodada
+      this.rodadaFrase = this.frases[this.rodada]
+    }
   }
 
 }
