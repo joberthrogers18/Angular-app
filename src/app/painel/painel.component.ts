@@ -43,6 +43,10 @@ export class PainelComponent implements OnInit {
     {
       //decrementa a variavel tentativas
       this.tentativas--
+
+      if(this.tentativas == -1){
+        alert('Você perdeu!')
+      }
     }
   }
 

@@ -9,7 +9,9 @@ export class ProgressoComponent implements OnInit {
 
   @Input() public progresso: number = 0  // Com @Input esse atributo pode recebe valores de outros componentes pai
 
-  constructor() { }
+  constructor() { 
+    console.log(this.progresso)
+  }
 
   ngOnInit() {
   }
