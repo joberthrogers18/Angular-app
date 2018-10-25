@@ -6,7 +6,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="float-right">
-                    <app-tentativas></app-tentativas>
+                    <app-tentativas [tentativas] = "tentativas"></app-tentativas>
                 </div>
             </div>    
         </div>
@@ -18,7 +18,8 @@
                     <textarea 
                     class="form-control"
                      rows="3"
-                    (input)="atualizarResposta($event)"></textarea><!-- Para fazer event bind de forma clara precisa usar $event como parametro da função-->
+                    (input)="atualizarResposta($event)"
+                    [value] = "resposta"></textarea><!-- Para fazer event bind de forma clara precisa usar $event como parametro da função-->
                 </div>
             </div>
         </div>

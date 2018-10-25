@@ -1,3 +1,6 @@
-  <img [src]="coracaoVazio" />
+<!--  <img [src]="coracaoVazio" />
   <img [src]="coracaoCheio" />
   <img [src]="coracaoCheio" />
+-->
+
+<img *ngFor="let coracao of coracoes" [src] ="coracao.exibeCoracao()"/> <!-- ele pega cada coracao dentro do array coracoes presente na classe tentativa e de la vai acessando o estado de cada coracao-->
