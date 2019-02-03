@@ -15,7 +15,7 @@ export class TentativasComponent implements OnInit, OnChanges {
   ]
 
   constructor() {
-    console.log(this.coracoes)
+    //console.log(this.coracoes)
   }
 
   ngOnChanges(){ // sempre que ha mudança de estado no input ele dispara
