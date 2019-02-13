@@ -15,8 +15,15 @@ export class HomeComponent implements OnInit {
   constructor(private ofertasService: OfertasService) { } //instace the service in variable to make the manipulation
 
   ngOnInit() {
-    this.ofertas = this.ofertasService.getOfertas();
-    console.log(this.ofertas);
+    //this.ofertas = this.ofertasService.getOfertas();
+    this.ofertasService.getOfertas2()
+    .then((ofertas: Array<Oferta>) => { // if the promise is resolve this "then" is execute
+        this.ofertas = ofertas;
+      })
+    .catch((param: any) => {
+        console.log(param)
+      }); // if the promise is reject this the first params of then catch is execute
+    //console.log(this.ofertas);
   }
 
 }
