@@ -35,35 +35,27 @@
   flex-direction: column;
 }
 
+.form-user {
+  border-radius: 25px;
+}
+
 .form-user h1 {
  margin-bottom: 100px;
 }
 
 .form-user form button {
   margin-top: 80px;
+  font-size: 20px;
 }
 
-.matInput {
-  background-color: #FFF;
-}
-
-mat-form-field.matIput {
-  background-color: #FFF !important;
-}
-
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.example-full-width {
-  width: 100%;
+::ng-deep .mat-focused .mat-input-placeholder {
+  color: red;
 }
 
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
   color: #FFF !important;
+  font-size: 20px !important;
  }
 
 ::ng-deep.mat-form-field-underline {
