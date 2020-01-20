@@ -1,0 +1,82 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.btn-user-submit {
+  background-color: #FFF;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-user {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: #FFF;
+  width: 400px;
+  height: 500px;
+  padding: 30px;
+}
+
+.container-search {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-search form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-user h1 {
+ margin-bottom: 100px;
+}
+
+.form-user form button {
+  margin-top: 80px;
+}
+
+.matInput {
+  background-color: #FFF;
+}
+
+mat-form-field.matIput {
+  background-color: #FFF !important;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #FFF !important;
+ }
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #FFF !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #FFF !important;
+}
+
+::ng-deep .mat-focused::placeholder {
+  color: #FFF;
+}
+

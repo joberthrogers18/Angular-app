@@ -1,0 +1,18 @@
+<div class="container-search">
+  <div class="form-user">
+    <h1>Usuário do github</h1>
+    <form>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Nome usuário" [(ngModel)]="username" name="username" (input)="onChange()">
+      </mat-form-field>
+      <button
+        mat-raised-button
+        class="btn-user-submit"
+        (click)="fetchInfoUser()"
+      >
+      Enviar
+      </button>
+    </form>
+  </div>
+</div>
+
