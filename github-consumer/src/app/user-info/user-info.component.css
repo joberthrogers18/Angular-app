@@ -1,0 +1,64 @@
+.container {
+  height: 100%;
+  width: 100%;
+  margin:25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container .perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #DDD;
+  border-radius: 25px;
+  width: 750px;
+  height: 500px;
+  padding: 30px;
+}
+
+.perfil img {
+  margin-right: 30px;
+  border: none;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.perfil .info {
+  text-align: center;
+}
+
+.perfil .info h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.perfil .info h2, .perfil .info p  {
+  color: #AAA;
+}
+
+@keyframes pulse {
+  from {
+    font-size: 16px;
+  }
+
+  to {
+    font-size: 20px;
+    color: #333;
+  }
+}
+
+.perfil .info a {
+  color: #AAA;
+  text-decoration: underline;
+  animation: pulse 0.5s infinite alternate;
+}
+
+
+
+
+

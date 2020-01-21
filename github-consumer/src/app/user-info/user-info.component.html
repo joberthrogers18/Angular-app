@@ -1,0 +1,12 @@
+
+<div class="container" *ngIf="user">
+  <div class="perfil">
+    <img src="{{user.avatar_url}}" alt="">
+    <div class="info">
+      <h1>{{user.name}}</h1>
+      <h2>{{user.login}}</h2>
+      <p>{{user.bio}}</p>
+      <a href="{{user.blog}}"> Blog: {{user.blog}}</a>
+    </div>
+  </div>
+</div>

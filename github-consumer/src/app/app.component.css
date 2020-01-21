@@ -11,11 +11,15 @@
 
 .navbar img {
   margin-right: 20px;
+  cursor: pointer;
+  outline: none;
 }
 
 .navbar h1 {
   font-weight: bold;
   letter-spacing: 1.5px;
+  cursor: pointer;
+  outline: none;
 }
 
 

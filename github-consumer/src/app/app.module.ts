@@ -12,12 +12,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchUserComponent } from './search-user/search-user.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchUserComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,

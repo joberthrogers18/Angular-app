@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { GatewayGithubService } from '../gateway-github.service';
 
 @Component({
@@ -12,6 +14,7 @@ export class SearchUserComponent implements OnInit {
 
   constructor(
     private gateway: GatewayGithubService,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -21,14 +24,10 @@ export class SearchUserComponent implements OnInit {
     console.log(this.username);
   }
 
-  onClick() {
-    console.log(this.username);
-  }
-
   fetchInfoUser() {
     this.gateway.getUserInfo(this.username).subscribe(
-      info => {
-        console.log(info);
+      user => {
+        this.router.navigate(['/user-info'], { state: { user }});
       }
     )
   }
